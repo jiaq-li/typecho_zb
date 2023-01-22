@@ -8,8 +8,8 @@
  */
 
 /** 载入配置支持 */
-if (!defined('__TYPECHO_ROOT_DIR__') && !@include_once './www/config.inc.php') {
-    file_exists('./www/install.php') ? header('Location: ./www/install.php') : print('Missing Config File');
+if (!defined('__TYPECHO_ROOT_DIR__') && !@include_once 'config.inc.php') {
+    file_exists('./install.php') ? header('Location: install.php') : print('Missing Config File');
     exit;
 }
 
